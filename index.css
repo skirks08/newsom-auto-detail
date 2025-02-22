@@ -1,0 +1,127 @@
+/* General Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+
+nav {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8b400;
+}
+
+/* Hero Section */
+
+header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Services Section */
+
+#services {
+    padding: 3rem 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+.service {
+    background-color: #f8f8f8;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.service h3 {
+    color: #222;
+}
+
+.service h4 {
+    color: #f8b400;
+}
+
+/* Social Media */
+
+#socials {
+    text-align: center;
+    padding: 2rem;
+    background-color: #222;
+    color: white;
+}
+
+#socials a {
+    display: inline-block;
+    color: white;
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#socials a i {
+    margin-right: 8px;
+}
+
+/* Contact Section */
+
+#contact {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+#contact a {
+    color: #222;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .service {
+        max-width: 90%;
+    }
+}
