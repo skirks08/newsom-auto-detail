@@ -49,6 +49,29 @@ header {
     color: white;
 }
 
+.hero {
+    padding: 5rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('my-hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #f8b400;
+    color: #222;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d89e00;
+}
+
 /* Breadcrumb Section */
 
 .breadcrumb {
