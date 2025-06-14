@@ -33,15 +33,38 @@ const bookingForm = document.getElementById("booking-form");
 bookingForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
+    // Disable button to prevent multiple submits 
+
+    const submitBtn = bookingForm.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Booking...";
+
     // Gather form data
 
-    const formData = {
-        name: document.getElementById("customer-name").value,
-        email: document.getElementById("customer-email").value,
-        date: document.getElementById("appointment-date").value,
-        time: document.getElementById("appointment-time").value,
-        service: document.getElementById("selected-service").value
-    };
+        const name = document.getElementById("customer-name").value.trim();
+        const email = document.getElementById("customer-email").value.trim();
+        const date = document.getElementById("appointment-date").value;
+        const time = document.getElementById("appointment-time").value;
+        const service = document.getElementById("selected-service").value;
+
+    // Simple Validation
+
+    const today = new Date().toISOString().split("T")[0];
+    if (!name || !email || !date || !time || !service) {
+        alert("⚠️ Please fill out all fields.");
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Book Appointment";
+        return;
+    }
+
+    if (date < today) {
+        alert("⚠️ Appointment date cannot be in the past.");
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Book Appointment";
+        return;
+    }
+
+    const formData = { name, email, date, time, service };
 
     try {
         // Send data to fake API
