@@ -49,6 +49,23 @@ header {
     color: white;
 }
 
+/* Breadcrumb Section */
+
+.breadcrumb {
+    padding: 1rem 2rem;
+    background-color: #eee;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: #333;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: #999;
+}
+
 /* Services Section */
 
 #services {
