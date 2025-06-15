@@ -77,12 +77,15 @@ bookingForm.addEventListener("submit", async (e) => {
             body: JSON.stringify(formData)
         });
 
-        if (response.ok) {
+        const result = await response.json();
+
+        if (result.result === "success") {
             alert("✅ Appointment booked successfully!");
             bookingForm.reset();
             document.getElementById("booking-modal").style.display = "none";
         } else {
             alert("❌ Something went wrong. Please try again.");
+            console.error(result.message || "Unknown error");
         } 
     } catch (error) {
         console.error("Error submitting form", error);
