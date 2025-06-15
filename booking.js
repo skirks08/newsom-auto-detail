@@ -69,7 +69,7 @@ bookingForm.addEventListener("submit", async (e) => {
     try {
         // Send data to fake API
 
-        const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbxupA_5I75YRDq5_HJTwjjCu_40PlqsiUsDI7cJLd_rUksPp1j9Cyd1HeVml2IgwyG5/exec", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
