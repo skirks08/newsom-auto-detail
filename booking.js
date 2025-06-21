@@ -65,6 +65,8 @@ bookingForm.addEventListener("submit", async (e) => {
 
     const formData = { name, email, date, time, service };
 
+    console.log("Sending formData:", formData);
+
     try {
         // Send data to fake API
 
@@ -76,8 +78,10 @@ bookingForm.addEventListener("submit", async (e) => {
             body: JSON.stringify(formData)
         });
 
+        console.log("Received response:", response);
+
         const result = await response.json();
-        console.log("Booking API result:", result); // Log response for booking
+        console.log("Booking API result:", result); 
 
         if (result.result === "success") {
             alert("✅ Appointment booked successfully!");
