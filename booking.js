@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const serviceInput = document.getElementById("selected-service");
     const bookingForm = document.getElementById("booking-form");
 
-    if (!bookingForm) {
+    if (!modal || !closeBtn || !serviceInput || !bookingForm) {
         console.error("Booking form not found in DOM.");
         return;
     }
