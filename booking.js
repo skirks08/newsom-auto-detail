@@ -78,7 +78,7 @@ bookingForm.addEventListener("submit", async (e) => {
         });
 
         const result = await response.json();
-        console.log("Booking API result:", result); // Log response
+        console.log("Booking API result:", result); // Log response for booking
 
         if (result.result === "success") {
             alert("✅ Appointment booked successfully!");
