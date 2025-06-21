@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         button.addEventListener("click", (e) => {
             const service = e.target.getAttribute("data-service");
             serviceInput.value = service;
-            modal.classList.remove("hidden");
             modal.style.display = "flex";
         });
     });
