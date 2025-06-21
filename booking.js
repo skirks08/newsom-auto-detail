@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("booking-modal");
     const closeBtn = document.querySelector(".closeBtn");
     const serviceInput = document.getElementById("selected-service");
+    const bookingForm = document.getElementById("booking-form");
 
     // Add Event Listeners for "Book Now" Buttons
 
