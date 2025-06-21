@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const serviceInput = document.getElementById("selected-service");
     const bookingForm = document.getElementById("booking-form");
 
+    if (!bookingForm) {
+        console.error("Booking form not found in DOM.");
+        return;
+    }
+
     // Add Event Listeners for "Book Now" Buttons
 
     const bookButtons = document.querySelectorAll(".book-now-btn");
