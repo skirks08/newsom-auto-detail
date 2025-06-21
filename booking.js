@@ -27,9 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.style.display = "none";
         }
     });
-});
 
-const bookingForm = document.getElementById("booking-form");
 
 bookingForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -92,5 +90,9 @@ bookingForm.addEventListener("submit", async (e) => {
     } catch (error) {
         console.error("Error submitting form", error);
         alert("⚠️ Failed to send appointment. Check your internet or try again later.");
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Confirm Booking";
     }
+  });
 });
