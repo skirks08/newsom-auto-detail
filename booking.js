@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Sending formData:", formData);
 
         try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbxupA_5I75YRDq5_HJTwjjCu_40PlqsiUsDI7cJLd_rUksPp1j9Cyd1HeVml2IgwyG5/exec", {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbxP9yvsZEEA5wYl2tORiFm2Zbogr7fPiBFqv04pDxtfohAxOPXe9EvEvvB3QuAMGr2Q/exec", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
