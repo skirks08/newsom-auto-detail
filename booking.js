@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             // Always update link
-            const response = await fetch("https://script.google.com/macros/s/AKfycbxcBq8aj3NyMQfF5MPRQoX7dtpk3xBNJ4zZBJop9IBtFcFmMgDlvBxyvsedtXC8BeTi/exec", {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbz8Y0JumCtQeG3gC-1nB58NvgO5KkkNCO5WJn1jtUaJQr78IkYcOBAWGF_fb20FEohr/exec", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
