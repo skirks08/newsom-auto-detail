@@ -121,6 +121,48 @@ header {
     color: #f8b400;
 }
 
+/* Experience Page Styles */
+
+#experience {
+    background: #fff;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+#experience h3 {
+    color: #f8b400;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+#experience ul li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#experience ul li:before {
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #f8b400;
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    font-size: 1.2rem;
+}
+
 /* Social Media */
 
 #socials {
