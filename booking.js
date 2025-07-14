@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const response = await fetch("https://script.google.com/macros/s/AKfycbxP9yvsZEEA5wYl2tORiFm2Zbogr7fPiBFqv04pDxtfohAxOPXe9EvEvvB3QuAMGr2Q/exec", {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
                 },
-                body: JSON.stringify(formData)
+                body: new URLSearchParams(formData).toString(),
             });
 
             const result = await response.json();
